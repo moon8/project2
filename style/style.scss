@@ -1,0 +1,185 @@
+@import "../partial/_setup.scss";
+@import "../partial/_variable.scss";
+@import "../partial/_forsure.scss";
+@import "../partial/_mediaQuery.scss";
+
+.header_content{
+	display: flex;
+	flex-flow: column nowrap;
+	align-item: flex-start;
+	margin-top: 18vh;
+	h1{
+		margin:1% 0;
+	}
+	p{
+		margin: 0 0 5% 0;
+		padding: 0;
+		@include bodywhite();
+	}
+	.CTA{
+		margin: 5% 0;
+	}
+}
+.new_item_img{
+	position: relative;
+	img.saleslabel{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+	}
+}
+.new_item_list{
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top: 5%;
+	justify-content: space-between;
+	.new_item{
+		width: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		margin-right: 5%;
+	}
+	.hide{
+		display: none;
+	}
+}
+.section_feature{
+	background-color: $black;
+}
+.feature_content{
+	padding: 20% 0;
+	width: 90%;
+	margin: 0 auto;
+	p{
+		@include bodywhite();
+	}
+}
+.product_feature{
+	display: flex;
+	flex-flow: row wrap;
+	.feature{
+		width: 50%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content:center;
+		padding: 10% 5%;
+		p{
+			@include bodywhite();
+			color: $black;
+			width: 100%;
+		}
+	}
+	.content1, .content4{
+		background-color: white;
+	}
+}
+.bestseller_list{
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0 auto;
+}
+.best_item{
+	position: relative;
+}
+.big{
+	width: 100%;
+	margin-top: 4%;
+	position: relative;
+}
+.best_item_label{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	h6{
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+	.price{
+		color: white;
+	}
+}
+.bestproducts{
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.bestseller_heading{
+		width: 100%;
+	}
+	.small1, .small2, .small3{
+		width: 49%;
+		position: relative; 
+	}
+	.hide{
+		display: none;
+	}
+}
+
+.fashion_news{
+	p.heading{
+		font-weight: 700;
+		margin-top: 2%;
+	}
+	p{
+		@include bodyblack();
+		margin: 1% 3% 0 0;
+		display: inline-block;
+	}
+}
+.news_img{
+	position: relative;
+	.news_with_img{
+		position: absolute;
+		left: 0%;
+		bottom: 0;
+		padding: 3%;
+		background: #ffffff87;
+	}
+}
+div.date{
+	background: white;
+	color: $mattgold;
+	padding: 2% 3%;
+	display: inline-block;
+	position: relative;
+	bottom: 20px;
+	left: 15px;
+	.day{
+		font-size: 1.6rem;
+		display: block;
+	}
+	.month{
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+}
+
+.news_contentonly{
+	padding-top: 5%;
+	display: flex;
+	flex-flow: column;
+	.news_sub{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		h3{
+			margin: auto 0;
+			flex-grow: 1;
+		}
+	}
+}
+.news{
+	margin: 5% 0;
+	.news_date{
+		color: $mattgold;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+	p{
+		color: $black;
+		width: 100%;
+	}
+}
+

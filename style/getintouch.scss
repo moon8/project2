@@ -1,0 +1,130 @@
+@import "../partial/_setup.scss";
+@import "../partial/_variable.scss";
+@import "../partial/_forsure.scss";
+@import "../partial/_mediaQuery.scss";
+
+
+section{
+	background-color: $black;
+	margin-top: 0;
+}
+form{
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0 auto;
+	position: relative;
+	bottom: 100px;
+	border-radius: 10px;
+	box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.25), -2px -2px 4px rgba(255, 255, 255, 0.25), 2px 0 4px rgba(255, 255, 255, 0.25), 0 2px 4px rgba(255, 255, 255, 0.25),;
+
+	.contact_form,.contact_information{
+		width: 100%;
+		margin: 0;
+		padding:3%;
+		background: white;
+		border: none;
+		border-top: 1px solid #e4e4e4;
+		.formheader{
+			text-align: center;
+			color: $mattgold;
+			font-size: 2rem;
+			margin: 10px auto 40px ;
+			text-transform: capitalize;
+		}
+	}
+}
+.contact_form{
+	border-radius: 10px 10px 0 0;
+}
+.contact_information{
+	border-radius: 0 0 10px 10px;
+	.phone, .email, .address{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: center;
+		h3{
+			text-align: center;
+			text-transform: capitalize;
+			color: $black;
+			font-weight: 300;
+		}
+		a i{
+			text-decoration: none;
+			color: $black;
+			font-size: 2.4rem;
+		}
+	}
+}
+
+label{
+	@extend h3;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.follow{
+	margin: 5% auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+iframe{
+	width: 100%;
+	height: 50%;
+	margin: 5% auto;
+}
+.formtitle{
+	text-align: center;
+	margin: 25% auto;
+	p{
+		width: 90%;
+		text-align: center;
+		font-size: 1.8rem;
+		line-height: 20px;
+		margin: auto;
+		color: white;
+		letter-spacing: 2px;
+	}
+}
+input::placeholder, textarea::placeholder {
+  color: #c4c4c4;
+  opacity: .3;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 3%;
+  text-transform: capitalize;
+}
+input[type=email], input[type=text] {
+	padding: 5px;
+	display:block;
+	width:100%;
+	line-height:20px;
+	border: none;
+	border-bottom: 1px solid #c4c4c4;
+	color: #AFB5BB;
+	background-color: transparent;
+	margin: 10px 0;
+}
+textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #c4c4c4;
+	margin: 30px 0;
+}
+input[type=submit] {
+	margin: 5% auto;
+	background: $black;
+	display: block;
+	padding:15px 30px;
+	width:50%;
+	color: white;
+	font-size: 1.8rem;
+	border-radius:5px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	box-shadow: 0px 2px 5px #c4c4c4;
+	&:hover{
+		color: $champagne;
+	}
+}

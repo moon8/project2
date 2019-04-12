@@ -1,0 +1,160 @@
+
+@media only screen and (min-width: $small) {
+
+
+}
+@media only screen and (min-width: $medium) {
+	body{
+		background-color: white;
+	}
+	body header{
+		height: 100vh;
+	}
+	header .topbar{
+		height: 10vh;
+		.main_logo{
+			margin-left: 5%;
+		}
+		.nav_icon{
+			width: 7%;
+		}
+	}
+	span.hamburger, span.exit-responsive{
+		display: none;
+	}
+	a.button{
+		width: 20%;
+		margin-right: 20px;
+	}
+	ul.menu{
+		display: block;
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		background-color: transparent;
+		li{
+			display: inline-block;
+
+			a{
+				border: none;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	div.new_item_list div.hide{
+		display: block;
+	}
+	.section_feature{
+		display: flex;
+		flex-flow: row nowrap;
+		.feature_content{
+			width: 50%;
+			padding-left: 5%;
+		}
+		.product_feature{
+			width: 50%;
+		}
+	}
+	section div.bestseller_list{
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		div.left{
+			width: 49%;
+			display: flex;
+			flex-flow: row wrap;
+			.bestseller_heading{
+				width: 49%;
+			}
+			.best_item{
+				width: 49%;
+			}
+		}
+		div.right{
+			width: 49%;
+			margin: 0 auto;
+		}
+	}
+	section div.bestseller_list div.bestproducts div.hide{
+		display: block;
+	}
+	section form{
+		flex-flow: row nowrap;
+		fieldset.contact_form{
+			width: 50%;
+			border-radius: 10px 0 0 10px; 
+		}
+		fieldset.contact_information{
+			width: 50%;
+			border-radius: 0 10px 10px 0;
+			border-left: 1px solid #c4c4c4;
+		}
+	}
+	.formtitle{
+		margin: 5% auto;
+	}
+}
+
+@media only screen and (min-width: $large) {
+	ul.menu{
+		width: 50%;
+	}
+	section.fashion_news{
+		display: flex;
+		flex-flow: row nowrap;
+		width: 90%;
+		margin: 10% auto;
+		div.news_main{
+			width: 49%;
+			margin-right: 1%;
+		}
+		div.news_contentonly{
+			width: 49%;
+			margin-left: 1%;
+			padding: 0 0 0 3%;
+		}
+	}
+	footer div.container div.content_container{
+		margin: 0 auto;
+		padding: 5% 0;
+		width: 90%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		.aboutus , .learn{
+			width: 15%;
+			margin-right: 4%;
+		}
+		.tweeter{
+			width: 35%;
+			margin-right: 4%;
+		}
+		.social{
+			width: 35%;
+
+		}
+
+	}
+	a.button{
+		width: 15%;
+    	padding: 15px 30px;
+	}
+	a.secondarybutton{
+		width: 30%;
+	}
+	a.textbutton{
+		width: 100%;
+	}
+
+
+}
+
+@media only screen and (min-width: $Xlarge) {
+	ul.menu{
+		.topbar div.main_logo{
+			width: 40%;
+		}
+		.topbar div.nav_icon{
+			width: 5%;
+		}
+	}
+}
